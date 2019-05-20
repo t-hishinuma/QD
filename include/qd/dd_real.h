@@ -105,6 +105,11 @@ struct QD_API dd_real {
   static dd_real ieee_add(const dd_real &a, const dd_real &b);
   static dd_real sloppy_add(const dd_real &a, const dd_real &b);
 
+  //hishinuma added
+  operator double(){
+	  return x[0];
+  }
+
   dd_real &operator+=(double a);
   dd_real &operator+=(const dd_real &a);
 
